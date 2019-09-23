@@ -1,5 +1,3 @@
-const findBy = (prop, val) => (function (character) {
-  return character[prop] === val;
-});
+const findBy = (prop, val) => (options => options[prop] === val);
 
 export default findBy;
